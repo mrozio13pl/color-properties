@@ -1,0 +1,22 @@
+{
+  "name": "color-properties",
+  "description": "extends string prototype with console styling using ANSI escape codes",
+  "version": "0.0.1",
+  "author": "mrozio13pl",
+  "license": "MIT",
+  "main": "index.js",
+  "homepage": "https://github.com/mrozio13pl/color-properties",
+  "bugs": "https://github.com/mrozio13pl/color-properties/issues",
+  "repository": {
+    "type": "git",
+    "url": "http://github.com/mrozio13pl/color-properties"
+  },
+  "keywords": ["console","colors","string","prototype","extended","properties"],
+  "files": [
+    "index.js",
+    "colorize.js",
+    "index.d.ts",
+    "colorize.d.ts",
+    "LICENSE"
+  ]
+}
