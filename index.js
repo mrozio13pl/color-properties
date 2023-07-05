@@ -1,29 +1,29 @@
 const colors = {
-  reset: '\x1b[0m',
-  bold: '\x1b[1m',
-  dim: '\x1b[2m',
-  italic: '\x1b[3m',
-  underline: '\x1b[4m',
-  inverse: '\x1b[7m',
-  hidden: '\x1b[8m',
-  strikethrough: '\x1b[9m',
-  black: '\x1b[30m',
-  red: '\x1b[31m',
-  green: '\x1b[32m',
-  yellow: '\x1b[33m',
-  blue: '\x1b[34m',
-  magenta: '\x1b[35m',
-  cyan: '\x1b[36m',
-  white: '\x1b[37m',
-  gray: '\x1b[90m',
-  bgBlack: '\x1b[40m',
-  bgRed: '\x1b[41m',
-  bgGreen: '\x1b[42m',
-  bgYellow: '\x1b[43m',
-  bgBlue: '\x1b[44m',
-  bgMagenta: '\x1b[45m',
-  bgCyan: '\x1b[46m',
-  bgWhite: '\x1b[47m',
+  reset: 0,
+  bold: 1,
+  dim: 2,
+  italic: 3,
+  underline: 4,
+  inverse: 7,
+  hidden: 8,
+  strikethrough: 9,
+  black: 30,
+  red: 31,
+  green: 32,
+  yellow: 33,
+  blue: 34,
+  magenta: 35,
+  cyan: 36,
+  white: 37,
+  gray: 90,
+  bgBlack: 40,
+  bgRed: 41,
+  bgGreen: 42,
+  bgYellow: 43,
+  bgBlue: 44,
+  bgMagenta: 45,
+  bgCyan: 46,
+  bgWhite: 47,
 };
 
 function colorize() {
@@ -31,7 +31,7 @@ function colorize() {
     if (Object.prototype.hasOwnProperty.call(colors, color)) {
       Object.defineProperty(String.prototype, color, {
         get() {
-          return colors[color] + this + colors.reset;
+          return '\x1b[' + colors[color] + 'm' + this + '\x1b[' + colors.reset + 'm';
         },
         configurable: true,
       });
