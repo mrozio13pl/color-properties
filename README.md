@@ -31,7 +31,7 @@ require('color-properties/colorize');
 Now, you can use the color and decoration properties directly on string instances. Here's an example:
 
 ```js
-console.log('Hello World!'.green.bold); // prints "Hello World!" in green and bold style
+console.log('Hello World!'.green.bright); // prints "Hello World!" in green and bold style
 ```
 
 ## Styles
@@ -39,7 +39,7 @@ console.log('Hello World!'.green.bold); // prints "Hello World!" in green and bo
 The following styles are avainable:
 
 -   `reset`
--   `bold`
+-   `bright`
 -   `dim`
 -   `italic`
 -   `underline`

@@ -1,6 +1,6 @@
 const colors = {
   reset: 0,
-  bold: 1,
+  bright: 1,
   dim: 2,
   italic: 3,
   underline: 4,
@@ -24,6 +24,7 @@ const colors = {
   bgMagenta: 45,
   bgCyan: 46,
   bgWhite: 47,
+  bold: 1,
 };
 
 function colorize() {

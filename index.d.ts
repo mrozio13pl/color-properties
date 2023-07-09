@@ -1,7 +1,7 @@
 declare global {
   interface String {
     reset: string;
-    bold: string;
+    bright: string;
     dim: string;
     italic: string;
     underline: string;
@@ -25,6 +25,8 @@ declare global {
     bgMagenta: string;
     bgCyan: string;
     bgWhite: string;
+    /** @deprecated `bold` has been deprecated in favor of `bright`. */
+    bold: string;
   }
 }
 
@@ -37,7 +39,7 @@ declare global {
  * const { colorize } = require('color-properties');
  * colorize();
  * 
- * console.log('Hello World! 👋'.green.bold);
+ * console.log('Hello World! 👋'.green.bright);
  * ```
  *
  * @returns {void}
