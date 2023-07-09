@@ -1,7 +1,7 @@
 {
   "name": "color-properties",
   "description": "extends string prototype with console styling using ANSI escape codes",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "author": "mrozio13pl",
   "license": "MIT",
   "main": "index.js",
