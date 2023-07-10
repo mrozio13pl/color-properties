@@ -63,6 +63,7 @@ The following styles are avainable:
 -   `bgMagenta`
 -   `bgCyan`
 -   `bgWhite`
+-   `bgGray`
 
 Refer to the example for combining multiple properties.
 

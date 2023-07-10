@@ -25,6 +25,7 @@ declare global {
     bgMagenta: string;
     bgCyan: string;
     bgWhite: string;
+    bgGray: string;
     /** @deprecated `bold` has been deprecated in favor of `bright`. */
     bold: string;
   }

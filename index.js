@@ -24,6 +24,7 @@ const colors = {
   bgMagenta: d(45, 49),
   bgCyan: d(46, 49),
   bgWhite: d(47, 49),
+  bgGray: d(100, 49),
   bold: d(1, 22),
 };
 
